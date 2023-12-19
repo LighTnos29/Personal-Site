@@ -1,0 +1,341 @@
+
+/*Heading*/
+.gradient-background {
+  background: linear-gradient(300deg, #C5FFF8, #4CB9E7, #E26EE5);
+  background-size: cover; 
+  background-attachment: fixed; 
+  animation: gradient-animation 12s ease infinite;
+  margin: 0; 
+  padding: 0; 
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+  }
+body {
+  font-family: 'Silkscreen', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+}
+.hello{
+  padding-left: 200px;
+  padding-right: 20px;
+  color: whitesmoke;
+  font-size: 8.5rem;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.img-container{
+ padding-left: 20px;
+ padding-top: 90px;
+ align-items: center;
+}
+.name-txt{
+  padding-left: 200px;
+  padding-right: 20px;
+  color: whitesmoke;
+  font-size: 5.5rem;
+  margin-top: 5px;
+}
+
+/* About */
+
+.container1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-heading{
+  margin-top: 90px;
+  margin-bottom: 20px;
+  font-size: 3rem;
+
+}
+.profile-pic{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  padding-bottom: 10px;
+  
+}
+span{
+ color: #4CB9E7;
+}
+.txt-container1{
+padding-left: 550px;
+padding-right: 500px;
+font-size: 50;
+font-weight: bold;
+  
+}
+
+/* Skill Section */
+
+.skills-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.skill1{
+display: flex;
+align-items: center;
+flex-direction: row;
+}
+.html-logo{
+  height: 150px;
+  padding-left: 450px;
+  padding-top: 70px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+ 
+}
+.txt-container2{
+  padding-right: 400px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.skill2{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  }
+  .css-logo{
+    height: 150px;
+    padding-left: 475px;
+    padding-top: 70px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+   
+  }
+  .skill3{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    }
+    .c-logo{
+      height: 150px;
+      padding-left: 475px;
+      padding-top: 70px;
+      padding-right: 50px;
+      padding-bottom: 50px;
+     
+    }
+    .skill4{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      }
+      .bootstrap-logo{
+        height: 135px;
+        padding-left: 450px;
+        padding-top: 70px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+       
+      }
+
+      .skill5{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        }
+        .mernstack-logo{
+          height: 160px;
+          padding-left: 460px;
+          padding-top: 70px;
+          padding-right: 50px;
+          padding-bottom: 50px;
+         
+        }
+
+/* Footer */
+
+.contacts{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  flex-direction: row;
+  font-size: 20;
+  gap: 100px;
+  height: 25vh;
+  color: white;
+}
+.linkedin:hover{
+  color: #0077b5;
+
+}
+.facebook:hover{
+  color: #4267B2;
+
+}
+.instagram:hover{
+  color: #8a3ab9;
+}
+
+/* Media Query */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hello {
+    padding-left: 0;
+    text-align: center;
+    font-size: 5rem; /* Adjusted font size for responsiveness */
+  }
+  .img-container {
+    padding-left: 0;
+    padding-top: 20px;
+    text-align: center;
+    max-width: 100%;
+  }
+  .name-txt {
+    padding-left: 0;
+    text-align: center;
+    font-size: 3rem; /* Adjusted font size for responsiveness */
+  }
+  .txt-container1 {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1rem; /* Adjusted font size for responsiveness */
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  /* Adjustments for smaller screens (e.g., iPhone) */
+  .img-container {
+    padding-top: 10px;
+  }
+  .name-txt {
+    font-size: 2.5rem;
+  }
+  .txt-container1 {
+    font-size: 1.2rem;
+  }
+  /* Adjust image size to fit smaller screens */
+  .img-container img {
+    max-width: 100%; /* Ensure image does not exceed its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Adjustments for larger mobile devices and smaller tablets */
+  .img-container {
+    padding-top: 20px;
+  }
+  .name-txt {
+    font-size: 3rem;
+  }
+  .txt-container1 {
+    font-size: 1rem;
+  }
+  /* Adjust image size to fit larger mobile devices and smaller tablets */
+  .img-container img {
+    max-width: 100%; /* Ensure image does not exceed its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Media Query for Smaller Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .html-logo,
+  .css-logo,
+  .c-logo,
+  .bootstrap-logo,
+  .mernstack-logo {
+    height: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .txt-container2 {
+    font-size: 1rem;
+  }
+}
+
+/* Media Query for Smaller Tablets and Larger Mobile Devices (min-width: 481px) and (max-width: 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .skills-heading {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 15px;
+  }
+
+  .html-logo,
+  .css-logo,
+  .c-logo,
+  .bootstrap-logo,
+  .mernstack-logo {
+    height: 110px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+
+  .txt-container2 {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Media Query for Smaller Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Other existing styles for smaller screens */
+
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    gap: 20px;
+    height: auto;
+    padding-top: 30px;
+  }
+}
+
+/* Media Query for Smaller Tablets and Larger Mobile Devices (min-width: 481px) and (max-width: 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Other existing styles for smaller tablets and larger mobile devices */
+
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    gap: 30px;
+    height: auto;
+    padding-top: 40px;
+  }
+}
+
