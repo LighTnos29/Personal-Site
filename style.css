@@ -1,12 +1,9 @@
 
 /*Heading*/
 .gradient-background {
-  background: linear-gradient(300deg, #C5FFF8, #4CB9E7, #E26EE5);
-  background-size: cover; 
-  background-attachment: fixed; 
+  background: linear-gradient(300deg, #C5FFF8, #96EFFF, #E26EE5);
+  background-size: 180% 180%;
   animation: gradient-animation 12s ease infinite;
-  margin: 0; 
-  padding: 0; 
 }
 
 @keyframes gradient-animation {
@@ -19,7 +16,7 @@
   100% {
     background-position: 0% 50%;
   }
-  }
+}
 body {
   font-family: 'Silkscreen', sans-serif;
   margin: 0;
